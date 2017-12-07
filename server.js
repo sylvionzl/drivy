@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var multer  = require('multer')
-var upload = multer({ dest: 'uploads/' })
+var multer  = require('multer');
+var upload = multer({ dest: 'uploads/' });
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
@@ -17,7 +17,7 @@ app.get('/form', function (req, res) {
 });
 
 app.post('/formulaire', upload.array() function (req, res) {
-  console.log(req.query);
+  console.log(req.body);
   res.send('OK');
 });
 
