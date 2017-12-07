@@ -12,7 +12,7 @@ app.get('/form', function (req, res) {
 });
 
 app.get('/formulaire', function (req, res) {
-  console.log(req.query.modele);
+  console.log(req.query);
   res.send('OK');
 });
 
