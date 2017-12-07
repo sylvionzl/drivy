@@ -16,7 +16,7 @@ app.get('/form', function (req, res) {
   res.render('form');
 });
 
-app.post('/formulaire', upload.array() function (req, res) {
+app.post('/formulaire', upload.array(), function (req, res) {
   console.log(req.body);
   res.send('OK');
 });
