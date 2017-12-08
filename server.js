@@ -65,4 +65,19 @@ app.listen(port, function () {
   console.log("Server listening on port 8080");
 });
 
+
+app.get('/map', function (req, res) {
+
+userModel.find(function (err, contacts) {
+
+  console.log(contacts);
+
+
+});
+
+  res.send(contacts);
+});
+
+
+
 //il faut aussi utiliser Multer (à installer sur le terminal : npm install --save multer)
