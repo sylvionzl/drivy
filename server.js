@@ -72,10 +72,8 @@ userModel.find(function (err, contacts) {
 
   console.log(contacts);
 
-
-});
-
-  res.send(contacts);
+  res.json(contacts);
+  });
 });
 
 
